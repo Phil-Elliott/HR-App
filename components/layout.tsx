@@ -1,15 +1,18 @@
 import { Meta } from "./meta";
-import LeftNav from "./leftNav/leftNav";
-import TopNav from "./topNav/topNav";
+import LeftNav from "./Nav/LeftNav/LeftNav";
+import TopNav from "./Nav/TopNav/TopNav";
+import styles from "../styles/layout/layout.module.scss";
 
 const Layout = ({ children }: { children: any }) => {
   return (
-    <>
+    <div className={styles.main}>
       <Meta />
-      <TopNav />
       <LeftNav />
-      <main>{children}</main>
-    </>
+      <div className={styles["right-container"]}>
+        <TopNav />
+        <main>{children}</main>
+      </div>
+    </div>
   );
 };
 
