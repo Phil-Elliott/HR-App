@@ -29,7 +29,7 @@ const Links = () => {
     {
       name: "Employees",
       icon: <FaUser />,
-      path: "/employee",
+      path: "/employees",
     },
     {
       name: "Attendance",
@@ -44,7 +44,7 @@ const Links = () => {
     {
       name: "Claims",
       icon: <FaPen />,
-      path: "/claim",
+      path: "/claims",
     },
     {
       name: "Payroll",
@@ -61,11 +61,11 @@ const Links = () => {
       icon: <FaToiletPaper />,
       path: "/reporting",
     },
-    {
-      name: "Settings",
-      icon: <FaTools />,
-      path: "/settings",
-    },
+    // {
+    //   name: "Settings",
+    //   icon: <FaTools />,
+    //   path: "/settings",
+    // },
   ];
 
   return (
