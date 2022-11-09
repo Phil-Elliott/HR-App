@@ -61,11 +61,11 @@ const Links = ({ navWidth }: { navWidth: string }) => {
       icon: <FaToiletPaper />,
       path: "/reporting",
     },
-    // {
-    //   name: "Settings",
-    //   icon: <FaTools />,
-    //   path: "/settings",
-    // },
+    {
+      name: "Settings",
+      icon: <FaTools />,
+      path: "/settings",
+    },
   ];
 
   return (

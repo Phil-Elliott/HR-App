@@ -1,7 +1,7 @@
 @use "../../abstracts" as *;
 
 .main {
-  background-color: red;
+  background-color: $primary;
   color: white;
   display: flex;
   flex-direction: column;
