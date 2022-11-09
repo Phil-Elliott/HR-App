@@ -1,17 +1,23 @@
 import React from "react";
 import styles from "../../../styles/layout/top-nav/topNav.module.scss";
-import { FaUser, FaSearch, FaBell, FaAngleRight } from "react-icons/fa";
+import {
+  FaUser,
+  FaSearch,
+  FaBell,
+  FaAngleRight,
+  FaAngleLeft,
+} from "react-icons/fa";
 
 const TopNav = () => {
   return (
     <div className={styles.main}>
       <div className={styles.left}>
-        <FaAngleRight />
+        <FaAngleLeft />
       </div>
       <div className={styles.right}>
-        <FaSearch />
-        <FaBell />
-        <FaUser />
+        <FaSearch className={styles.icon} />
+        <FaBell className={styles.icon} />
+        <FaUser className={styles.icon} />
       </div>
     </div>
   );
