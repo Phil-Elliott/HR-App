@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "../../../styles/layout/left-nav/links.module.scss";
+import styles from "../../../../styles/layout/left-nav/links.module.scss";
 import {
   FaHome,
   FaBuilding,
