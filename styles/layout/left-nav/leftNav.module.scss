@@ -1,24 +1,13 @@
 @use "../../abstracts" as *;
 
 .main {
-  background-color: black !important;
+  background-color: $primary;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  //   width: 100%;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  background-color: #fff;
-  border-right: 1px solid #e0e0e0;
-  overflow: auto;
-  padding: 1rem 0;
-}
-
-.links {
-}
-
-.expand-bttn {
-  padding: 1rem 2rem;
+  overflow: none;
+  padding: 0.25rem 0;
+  transition: all 0.3s ease-in-out;
 }

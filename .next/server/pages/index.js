@@ -1,4 +1,3 @@
-"use strict";
 /*
  * ATTENTION: An "eval-source-map" devtool has been used.
  * This devtool is neither made for production nor for readable output files.
@@ -13,13 +12,24 @@ exports.id = "pages/index";
 exports.ids = ["pages/index"];
 exports.modules = {
 
+/***/ "./styles/pages/home/home.module.scss":
+/*!********************************************!*\
+  !*** ./styles/pages/home/home.module.scss ***!
+  \********************************************/
+/***/ ((module) => {
+
+eval("// Exports\nmodule.exports = {\n\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zdHlsZXMvcGFnZXMvaG9tZS9ob21lLm1vZHVsZS5zY3NzLmpzIiwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7O0FBRUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ocl9hcHBsaWNhdGlvbi8uL3N0eWxlcy9wYWdlcy9ob21lL2hvbWUubW9kdWxlLnNjc3M/MjIyOCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBFeHBvcnRzXG5tb2R1bGUuZXhwb3J0cyA9IHtcblxufTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./styles/pages/home/home.module.scss\n");
+
+/***/ }),
+
 /***/ "./pages/index.tsx":
 /*!*************************!*\
   !*** ./pages/index.tsx ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: \"Home\"\n    }, void 0, false, {\n        fileName: \"/home/phil/Programming/HR-App/pages/index.tsx\",\n        lineNumber: 6,\n        columnNumber: 10\n    }, this);\n} /*\n\n\n\n3) Create the header layout \n4) Add the routes to the header\n5) figure out how we will use github\n6) add other stuff from codesandbox example\n \nmui example repo\n\n1) landing page\n2) signin page\n3) directs to home page \n// \nDashboard\n1) Layout\n      Sidebar\n      top header \n      Content that will change with each page\n\n*/ \n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7QUFJZSxTQUFTQSxPQUFPO0lBQzdCLHFCQUFPLDhEQUFDQztrQkFBSTs7Ozs7O0FBQ2QsQ0FBQyxDQUVEOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFxQkEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ocl9hcHBsaWNhdGlvbi8uL3BhZ2VzL2luZGV4LnRzeD8wN2ZmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcbmltcG9ydCBJbWFnZSBmcm9tIFwibmV4dC9pbWFnZVwiO1xuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi4vc3R5bGVzL0hvbWUubW9kdWxlLmNzc1wiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkge1xuICByZXR1cm4gPGRpdj5Ib21lPC9kaXY+O1xufVxuXG4vKlxuXG5cblxuMykgQ3JlYXRlIHRoZSBoZWFkZXIgbGF5b3V0IFxuNCkgQWRkIHRoZSByb3V0ZXMgdG8gdGhlIGhlYWRlclxuNSkgZmlndXJlIG91dCBob3cgd2Ugd2lsbCB1c2UgZ2l0aHViXG42KSBhZGQgb3RoZXIgc3R1ZmYgZnJvbSBjb2Rlc2FuZGJveCBleGFtcGxlXG4gXG5tdWkgZXhhbXBsZSByZXBvXG5cbjEpIGxhbmRpbmcgcGFnZVxuMikgc2lnbmluIHBhZ2VcbjMpIGRpcmVjdHMgdG8gaG9tZSBwYWdlIFxuLy8gXG5EYXNoYm9hcmRcbjEpIExheW91dFxuICAgICAgU2lkZWJhclxuICAgICAgdG9wIGhlYWRlciBcbiAgICAgIENvbnRlbnQgdGhhdCB3aWxsIGNoYW5nZSB3aXRoIGVhY2ggcGFnZVxuXG4qL1xuIl0sIm5hbWVzIjpbIkhvbWUiLCJkaXYiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.tsx\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_pages_home_home_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/pages/home/home.module.scss */ \"./styles/pages/home/home.module.scss\");\n/* harmony import */ var _styles_pages_home_home_module_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_home_home_module_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_styles_pages_home_home_module_scss__WEBPACK_IMPORTED_MODULE_1___default().main),\n        children: \"Home\"\n    }, void 0, false, {\n        fileName: \"/home/phil/Programming/HR-App/pages/index.tsx\",\n        lineNumber: 6,\n        columnNumber: 10\n    }, this);\n} /*\n\n1) Finish the left header\n2) Make the top header \n3) Make both headers responsive\n4) Add a lot to the abstracts folder\n\nBlog and personal \n1) Learn more about github and maybe start an article\n2) Work on accessability and lighthouse score\n\n\n\n1) landing page\n2) signin page\n3) directs to home page \n\n*/ \n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7QUFBQTtBQUUyRDtBQUU1QyxTQUFTQyxPQUFPO0lBQzdCLHFCQUFPLDhEQUFDQztRQUFJQyxXQUFXSCxpRkFBVztrQkFBRTs7Ozs7O0FBQ3RDLENBQUMsQ0FFRDs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFpQkEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ocl9hcHBsaWNhdGlvbi8uL3BhZ2VzL2luZGV4LnRzeD8wN2ZmIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcbmltcG9ydCBJbWFnZSBmcm9tIFwibmV4dC9pbWFnZVwiO1xuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi4vc3R5bGVzL3BhZ2VzL2hvbWUvaG9tZS5tb2R1bGUuc2Nzc1wiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBIb21lKCkge1xuICByZXR1cm4gPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5tYWlufT5Ib21lPC9kaXY+O1xufVxuXG4vKlxuXG4xKSBGaW5pc2ggdGhlIGxlZnQgaGVhZGVyXG4yKSBNYWtlIHRoZSB0b3AgaGVhZGVyIFxuMykgTWFrZSBib3RoIGhlYWRlcnMgcmVzcG9uc2l2ZVxuNCkgQWRkIGEgbG90IHRvIHRoZSBhYnN0cmFjdHMgZm9sZGVyXG5cbkJsb2cgYW5kIHBlcnNvbmFsIFxuMSkgTGVhcm4gbW9yZSBhYm91dCBnaXRodWIgYW5kIG1heWJlIHN0YXJ0IGFuIGFydGljbGVcbjIpIFdvcmsgb24gYWNjZXNzYWJpbGl0eSBhbmQgbGlnaHRob3VzZSBzY29yZVxuXG5cblxuMSkgbGFuZGluZyBwYWdlXG4yKSBzaWduaW4gcGFnZVxuMykgZGlyZWN0cyB0byBob21lIHBhZ2UgXG5cbiovXG4iXSwibmFtZXMiOlsic3R5bGVzIiwiSG9tZSIsImRpdiIsImNsYXNzTmFtZSIsIm1haW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./pages/index.tsx\n");
 
 /***/ }),
 
@@ -29,6 +39,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************************/
 /***/ ((module) => {
 
+"use strict";
 module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
