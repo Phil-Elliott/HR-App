@@ -14,7 +14,7 @@ import {
   FaTools,
 } from "react-icons/fa";
 
-const Links = () => {
+const Links = ({ navWidth }: { navWidth: string }) => {
   const NavLinks = [
     {
       name: "Dashboard",
@@ -72,9 +72,16 @@ const Links = () => {
     <>
       {NavLinks.map((link) => (
         <Link href={link.path} key={link.name}>
-          <div className={styles.link}>
+          <div
+            className={styles.link}
+            style={{
+              justifyContent: navWidth !== "15rem" ? "center" : "inherit",
+            }}
+          >
             <div className={styles.icon}>{link.icon}</div>
-            <div className={styles.name}>{link.name}</div>
+            {navWidth === "15rem" && (
+              <div className={styles.name}>{link.name}</div>
+            )}
           </div>
         </Link>
       ))}
@@ -83,3 +90,6 @@ const Links = () => {
 };
 
 export default Links;
+
+//navWidth !== "15rem" &&
+// {{ justifyContent: "center" }}
