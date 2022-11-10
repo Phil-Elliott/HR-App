@@ -8,11 +8,21 @@ import {
   FaAngleLeft,
 } from "react-icons/fa";
 
-const TopNav = ({ toggleNav }: { toggleNav: any }) => {
+const TopNav = ({
+  toggleNav,
+  navWidth,
+}: {
+  toggleNav: any;
+  navWidth: string;
+}) => {
   return (
     <div className={styles.main}>
       <div className={styles.left} onClick={() => toggleNav()}>
-        <FaAngleLeft />
+        {navWidth === "15rem" ? (
+          <FaAngleLeft className={styles["arrow-left"]} />
+        ) : (
+          <FaAngleLeft className={styles["arrow-right"]} />
+        )}
       </div>
       <div className={styles.right}>
         <FaSearch className={styles.icon} />

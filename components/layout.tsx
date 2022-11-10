@@ -20,7 +20,7 @@ const Layout = ({ children }: { children: any }) => {
       <Meta />
       <LeftNav navWidth={navWidth} />
       <div className={styles["right-container"]}>
-        <TopNav toggleNav={toggleNav} />
+        <TopNav toggleNav={toggleNav} navWidth={navWidth} />
         <main>{children}</main>
       </div>
     </div>

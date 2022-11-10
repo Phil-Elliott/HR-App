@@ -7,9 +7,6 @@ export default function Home() {
 }
 
 /*
-
-1) Change move arrow 
-2) Have move arrow change on click 
 3) Put a logout button where old arrow is 
 4) Sepperate settings and a help button with a divider 
 5) Add hover effects to each button 
