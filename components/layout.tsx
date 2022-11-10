@@ -1,15 +1,26 @@
+import React, { useState } from "react";
 import { Meta } from "./meta";
 import LeftNav from "./Nav/LeftNav/LeftNav";
 import TopNav from "./Nav/TopNav/TopNav";
 import styles from "../styles/layout/layout.module.scss";
 
 const Layout = ({ children }: { children: any }) => {
+  const [navWidth, setNavWidth] = useState("15rem");
+
+  const toggleNav = () => {
+    if (navWidth === "15rem") {
+      setNavWidth("5rem");
+    } else {
+      setNavWidth("15rem");
+    }
+  };
+
   return (
     <div className={styles.main}>
       <Meta />
-      <LeftNav />
+      <LeftNav navWidth={navWidth} />
       <div className={styles["right-container"]}>
-        <TopNav />
+        <TopNav toggleNav={toggleNav} />
         <main>{children}</main>
       </div>
     </div>

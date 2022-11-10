@@ -8,10 +8,10 @@ import {
   FaAngleLeft,
 } from "react-icons/fa";
 
-const TopNav = () => {
+const TopNav = ({ toggleNav }: { toggleNav: any }) => {
   return (
     <div className={styles.main}>
-      <div className={styles.left}>
+      <div className={styles.left} onClick={() => toggleNav()}>
         <FaAngleLeft />
       </div>
       <div className={styles.right}>

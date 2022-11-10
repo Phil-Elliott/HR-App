@@ -90,6 +90,3 @@ const Links = ({ navWidth }: { navWidth: string }) => {
 };
 
 export default Links;
-
-//navWidth !== "15rem" &&
-// {{ justifyContent: "center" }}
