@@ -62,9 +62,12 @@ const LeftNav = ({ navWidth }: { navWidth: string }) => {
       path: "/reporting",
     },
   ];
-
+  // style={{ width: navWidth }}
   return (
-    <div className={styles.main} style={{ width: navWidth }}>
+    <div
+      className={styles.main}
+      style={{ width: navWidth === "wide" ? "18rem" : "7rem" }}
+    >
       <div className={styles.top}>
         <Header navWidth={navWidth} />
         {NavLinks.map((link) => (

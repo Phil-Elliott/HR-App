@@ -5,13 +5,13 @@ import TopNav from "./Nav/TopNav/TopNav";
 import styles from "../styles/layout/layout.module.scss";
 
 const Layout = ({ children }: { children: any }) => {
-  const [navWidth, setNavWidth] = useState("15rem");
+  const [navWidth, setNavWidth] = useState("wide");
 
   const toggleNav = () => {
-    if (navWidth === "15rem") {
-      setNavWidth("5rem");
+    if (navWidth === "wide") {
+      setNavWidth("narrow");
     } else {
-      setNavWidth("15rem");
+      setNavWidth("wide");
     }
   };
 
