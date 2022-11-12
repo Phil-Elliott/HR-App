@@ -7,20 +7,12 @@ export default function Home() {
 }
 
 /*
-
-1) Finish the left header
-2) Make the top header 
-3) Make both headers responsive
-4) Add a lot to the abstracts folder
-
-Blog and personal 
-1) Learn more about github and maybe start an article
-2) Work on accessability and lighthouse score
+4) Fix up top right part 
+5) Make responsive
 
 
-
-1) landing page
-2) signin page
-3) directs to home page 
+1) Clean up sass
+2) Add variables and mixins 
+3) Start working on testing
 
 */
