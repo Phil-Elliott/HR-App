@@ -1,90 +1,31 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../../../../styles/layout/left-nav/links.module.scss";
-import {
-  FaHome,
-  FaBuilding,
-  FaUser,
-  FaTimes,
-  FaWalking,
-  FaPen,
-  FaMoneyCheck,
-  FaCheck,
-  FaToiletPaper,
-  FaTools,
-} from "react-icons/fa";
 
-const Links = ({ navWidth }: { navWidth: string }) => {
-  const NavLinks = [
-    {
-      name: "Dashboard",
-      icon: <FaHome />,
-      path: "/",
-    },
-    {
-      name: "Company",
-      icon: <FaBuilding />,
-      path: "/company",
-    },
-    {
-      name: "Employees",
-      icon: <FaUser />,
-      path: "/employees",
-    },
-    {
-      name: "Attendance",
-      icon: <FaTimes />,
-      path: "/attendance",
-    },
-    {
-      name: "Leave",
-      icon: <FaWalking />,
-      path: "/leave",
-    },
-    {
-      name: "Claims",
-      icon: <FaPen />,
-      path: "/claims",
-    },
-    {
-      name: "Payroll",
-      icon: <FaMoneyCheck />,
-      path: "/payroll",
-    },
-    {
-      name: "Appraisal",
-      icon: <FaCheck />,
-      path: "/appraisal",
-    },
-    {
-      name: "Reporting",
-      icon: <FaToiletPaper />,
-      path: "/reporting",
-    },
-    {
-      name: "Settings",
-      icon: <FaTools />,
-      path: "/settings",
-    },
-  ];
+interface LinkProps {
+  name: string;
+  icon: JSX.Element;
+  path: string;
+  navWidth: string;
+}
 
+const Links = ({ navWidth, path, name, icon }: LinkProps) => {
+  const router = useRouter();
   return (
     <>
-      {NavLinks.map((link) => (
-        <Link href={link.path} key={link.name}>
-          <div
-            className={styles.link}
-            style={{
-              justifyContent: navWidth !== "15rem" ? "center" : "inherit",
-            }}
-          >
-            <div className={styles.icon}>{link.icon}</div>
-            {navWidth === "15rem" && (
-              <div className={styles.name}>{link.name}</div>
-            )}
-          </div>
-        </Link>
-      ))}
+      <Link href={path} key={name}>
+        <div
+          // className={styles.link}
+          className={router.pathname !== path ? styles.link : styles.activeLink}
+          style={{
+            justifyContent: navWidth !== "15rem" ? "center" : "inherit",
+          }}
+        >
+          <div className={styles.icon}>{icon}</div>
+          {navWidth === "15rem" && <div className={styles.name}>{name}</div>}
+        </div>
+      </Link>
     </>
   );
 };

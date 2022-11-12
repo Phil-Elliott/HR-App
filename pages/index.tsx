@@ -7,26 +7,12 @@ export default function Home() {
 }
 
 /*
-3) Put a logout button where old arrow is 
-4) Sepperate settings and a help button with a divider 
-5) Add hover effects to each button 
-6) Fix up top header some more
-7) Add a search bar on click that expands to the right
-8) Make everything responsive
-
-1) Finish the left header
-2) Make the top header 
-3) Make both headers responsive
-4) Add a lot to the abstracts folder
-
-Blog and personal 
-1) Learn more about github and maybe start an article
-2) Work on accessability and lighthouse score
+4) Fix up top right part 
+5) Make responsive
 
 
-
-1) landing page
-2) signin page
-3) directs to home page 
+1) Clean up sass
+2) Add variables and mixins 
+3) Start working on testing
 
 */
