@@ -7,8 +7,14 @@ export default function Home() {
 }
 
 /*
-4) Fix up top right part 
+
 5) Make responsive
+  - remove arrow
+  - logo and hamburger menu
+  - make list 100% width on click
+
+
+
 
 
 1) Clean up sass

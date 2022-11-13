@@ -1,6 +1,5 @@
 import React from "react";
-import Left from "./components/Left";
-import Right from "./components/Right";
+import { Left, Right } from "./components";
 import styles from "../../../styles/layout/top-nav/topNav.module.scss";
 
 const TopNav = ({

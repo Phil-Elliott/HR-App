@@ -16,7 +16,6 @@ const Links = ({ navWidth, path, name, icon }: LinkProps) => {
     <>
       <Link href={path} key={name}>
         <div
-          // className={styles.link}
           className={router.pathname !== path ? styles.link : styles.activeLink}
           style={{
             justifyContent: navWidth !== "wide" ? "center" : "inherit",
