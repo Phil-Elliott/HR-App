@@ -15,7 +15,12 @@ const Left = ({
   // returns the page name from the router in the correct form to be displayed
   const getPageName = () => {
     const path = router.pathname;
-    const pageName = path.split("/")[1];
+    let pageName;
+    if (path === "/") {
+      pageName = "Home";
+    } else {
+      pageName = path.split("/")[1];
+    }
     return pageName[0].toUpperCase() + pageName.slice(1).toLowerCase();
   };
 
