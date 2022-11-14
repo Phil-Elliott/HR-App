@@ -86,10 +86,13 @@ const LeftNav = ({
       <div className={styles.top}>
         <div className={styles["logo-container"]}>
           <Logo navWidth={navWidth} display="normal" />
-          <FaPoop
-            className={styles["exit-logo"]}
-            onClick={() => toggleDisplay()}
-          />
+
+          {navWidth === "responsive" && (
+            <FaPoop
+              className={styles["exit-logo"]}
+              onClick={() => toggleDisplay()}
+            />
+          )}
         </div>
         {NavLinks.map((link) => (
           <Links

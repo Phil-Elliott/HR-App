@@ -16,18 +16,22 @@ const Header = ({
           ? `${styles.header} ${styles["header-responsive"]}`
           : styles["header"]
       }
-      style={{
-        justifyContent: navWidth === "narrow" ? "center" : "inherit",
-      }}
     >
-      <div className={styles.logo}>
-        <FaWpforms />
-      </div>
-      {navWidth !== "narrow" && (
-        <div className={styles.title}>
-          <h1>HRMS</h1>
+      <div
+        className={styles["logo-container"]}
+        style={{
+          justifyContent: navWidth === "narrow" ? "center" : "inherit",
+        }}
+      >
+        <div className={styles.logo}>
+          <FaWpforms />
         </div>
-      )}
+        {navWidth !== "narrow" && (
+          <div className={styles.title}>
+            <h1>HRMS</h1>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

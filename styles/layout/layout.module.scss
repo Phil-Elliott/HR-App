@@ -10,3 +10,26 @@
   height: 100%;
   width: 100%;
 }
+
+.responsive-layout,
+.normal-layout {
+  width: 100%;
+  height: 100%;
+}
+
+.normal-layout {
+  display: flex;
+}
+
+@media only screen and (min-width: 800px) {
+  .responsive-layout {
+    display: none;
+    // width: 100vw !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .normal-layout {
+    display: none;
+  }
+}
