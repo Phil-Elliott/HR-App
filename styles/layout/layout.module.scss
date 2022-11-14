@@ -7,6 +7,26 @@
 }
 
 .right-container {
-  height: 100%;
-  width: 100%;
+  @extend %full-container;
+}
+
+.responsive-layout,
+.normal-layout {
+  @extend %full-container;
+}
+
+.normal-layout {
+  display: flex;
+}
+
+@media only screen and (min-width: 800px) {
+  .responsive-layout {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .normal-layout {
+    display: none;
+  }
 }

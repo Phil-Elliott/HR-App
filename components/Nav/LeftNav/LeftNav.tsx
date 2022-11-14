@@ -1,5 +1,6 @@
 import React from "react";
-import { Header, Links } from "./components";
+import { Links } from "./components";
+import Logo from "../../Shared/Logo";
 import styles from "../../../styles/layout/left-nav/leftNav.module.scss";
 import {
   FaHome,
@@ -12,9 +13,16 @@ import {
   FaCheck,
   FaToiletPaper,
   FaTools,
+  FaPoop,
 } from "react-icons/fa";
 
-const LeftNav = ({ navWidth }: { navWidth: string }) => {
+const LeftNav = ({
+  navWidth,
+  toggleDisplay,
+}: {
+  navWidth: string;
+  toggleDisplay: any;
+}) => {
   const NavLinks = [
     {
       name: "Dashboard",
@@ -62,14 +70,30 @@ const LeftNav = ({ navWidth }: { navWidth: string }) => {
       path: "/reporting",
     },
   ];
-  // style={{ width: navWidth }}
+
   return (
     <div
       className={styles.main}
-      style={{ width: navWidth === "wide" ? "18rem" : "7rem" }}
+      style={{
+        width:
+          navWidth === "responsive"
+            ? "100vw"
+            : navWidth === "wide"
+            ? "18rem"
+            : "7rem",
+      }}
     >
       <div className={styles.top}>
-        <Header navWidth={navWidth} />
+        <div className={styles["logo-container"]}>
+          <Logo navWidth={navWidth} display="normal" />
+
+          {navWidth === "responsive" && (
+            <FaPoop
+              className={styles["exit-logo"]}
+              onClick={() => toggleDisplay()}
+            />
+          )}
+        </div>
         {NavLinks.map((link) => (
           <Links
             navWidth={navWidth}

@@ -1,0 +1,11 @@
+@use "../../abstracts" as *;
+
+.hamburger-icon {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) {
+  .hamburger-icon {
+    display: none;
+  }
+}

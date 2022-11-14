@@ -5,7 +5,5 @@
   width: 100%;
   position: relative;
   padding: 0.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %flex-between;
 }
