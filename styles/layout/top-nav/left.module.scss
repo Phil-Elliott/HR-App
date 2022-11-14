@@ -1,37 +1,31 @@
 @use "../../abstracts" as *;
 
 .leftContainer {
-  display: flex;
-  align-items: center;
+  @extend %flex-align-center;
 }
 
 .left {
+  @extend %main-icon;
   background: white;
-  border-radius: 100%;
   box-shadow: $shadow;
   color: $primary;
-  font-size: clamp(1.25rem, 1.25vw, 1.25vw);
-  cursor: pointer;
-  width: 2rem;
-  height: 2rem;
+  font-size: $medium-font-size;
   margin-left: -3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;
 }
 
 .arrow-right {
-  transition: all 0.5s ease-in-out;
+  transition: $transistion-ease;
   transform: rotateZ(-180deg);
 }
 
 .arrow-left {
-  transition: all 0.5s ease-in-out;
+  transition: $transistion-ease;
   transform: rotateZ(0deg);
 }
 
 .page-name {
-  font-size: clamp(1.25rem, 1.25vw, 1.25vw);
+  font-size: $medium-font-size;
   margin: 0 0 0 1rem;
 }
 

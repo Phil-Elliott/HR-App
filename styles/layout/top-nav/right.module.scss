@@ -1,33 +1,25 @@
 @use "../../abstracts" as *;
 
 .right {
-  display: flex;
-  align-items: center;
-  // justify-content: flex-end;
+  @extend %flex-align-center;
   height: 100%;
 }
 
 .icon {
-  font-size: clamp(1rem, 1vw, 1vw);
+  font-size: $basic-font-size;
   cursor: pointer;
   margin-left: 1.5rem;
 }
 
 .user {
-  display: flex;
-  align-items: center;
+  @extend %flex-align-center;
   margin-left: 1rem;
 
   .name-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %main-icon;
     background: $primary;
     color: white;
-    font-size: clamp(1rem, 1vw, 1vw);
-    border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
+    font-size: $basic-font-size;
     margin-left: 1rem;
   }
 

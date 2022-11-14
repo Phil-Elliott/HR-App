@@ -5,13 +5,5 @@
   width: 100%;
   position: relative;
   padding: 0.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media only screen and (max-width: 800px) {
-  .main {
-    // justify-content: flex-end;
-  }
+  @extend %flex-between;
 }

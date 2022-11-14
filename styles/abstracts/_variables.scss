@@ -31,3 +31,6 @@ $border-radius: 3px;
 //==================================================
 // Font Sizes
 //==================================================
+
+$basic-font-size: clamp(1rem, 1vw, 1vw);
+$medium-font-size: clamp(1.25rem, 1.25vw, 1.25vw);

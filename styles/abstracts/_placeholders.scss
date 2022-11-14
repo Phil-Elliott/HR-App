@@ -1,0 +1,41 @@
+@use "variables.scss" as *;
+
+%full-container {
+  width: 100%;
+  height: 100%;
+}
+
+// flex placeholders
+%flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-between {
+  @extend %flex-align-center;
+  justify-content: space-between;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-column-between {
+  @extend %flex-column;
+  justify-content: space-between;
+}
+
+// icon placeholders
+%main-icon {
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  @extend %flex-center;
+}
