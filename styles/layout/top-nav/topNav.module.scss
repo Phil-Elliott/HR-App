@@ -9,3 +9,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media only screen and (max-width: 800px) {
+  .main {
+    // justify-content: flex-end;
+  }
+}

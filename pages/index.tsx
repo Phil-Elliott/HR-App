@@ -13,7 +13,14 @@ export default function Home() {
   - logo and hamburger menu
   - make list 100% width on click
 
+top
+  - Hamburguer menu
+  - Logo and name
+  - account bubble (click for drop menu)
 
+slide out menu
+  - list of links
+  -make them come out 100% width on click
 
 
 

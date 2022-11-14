@@ -1,5 +1,6 @@
 import React from "react";
-import { Header, Links } from "./components";
+import { Links } from "./components";
+import Logo from "../../Shared/Logo";
 import styles from "../../../styles/layout/left-nav/leftNav.module.scss";
 import {
   FaHome,
@@ -62,14 +63,14 @@ const LeftNav = ({ navWidth }: { navWidth: string }) => {
       path: "/reporting",
     },
   ];
-  // style={{ width: navWidth }}
+
   return (
     <div
       className={styles.main}
       style={{ width: navWidth === "wide" ? "18rem" : "7rem" }}
     >
       <div className={styles.top}>
-        <Header navWidth={navWidth} />
+        <Logo navWidth={navWidth} display="normal" />
         {NavLinks.map((link) => (
           <Links
             navWidth={navWidth}
