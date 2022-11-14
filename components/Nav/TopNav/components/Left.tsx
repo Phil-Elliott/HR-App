@@ -17,7 +17,7 @@ const Left = ({
     const path = router.pathname;
     let pageName;
     if (path === "/") {
-      pageName = "Home";
+      pageName = "Dashboard";
     } else {
       pageName = path.split("/")[1];
     }

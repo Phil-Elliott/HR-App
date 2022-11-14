@@ -17,13 +17,13 @@ const Header = ({
           : styles["header"]
       }
       style={{
-        justifyContent: navWidth !== "wide" ? "center" : "inherit",
+        justifyContent: navWidth === "narrow" ? "center" : "inherit",
       }}
     >
       <div className={styles.logo}>
         <FaWpforms />
       </div>
-      {navWidth === "wide" && (
+      {navWidth !== "narrow" && (
         <div className={styles.title}>
           <h1>HRMS</h1>
         </div>

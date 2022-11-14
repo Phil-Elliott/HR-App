@@ -18,11 +18,11 @@ const Links = ({ navWidth, path, name, icon }: LinkProps) => {
         <div
           className={router.pathname !== path ? styles.link : styles.activeLink}
           style={{
-            justifyContent: navWidth !== "wide" ? "center" : "inherit",
+            justifyContent: navWidth === "narrow" ? "center" : "inherit",
           }}
         >
           <div className={styles.icon}>{icon}</div>
-          {navWidth === "wide" && <div className={styles.name}>{name}</div>}
+          {navWidth !== "narrow" && <div className={styles.name}>{name}</div>}
         </div>
       </Link>
     </>

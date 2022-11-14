@@ -13,9 +13,16 @@ import {
   FaCheck,
   FaToiletPaper,
   FaTools,
+  FaPoop,
 } from "react-icons/fa";
 
-const LeftNav = ({ navWidth }: { navWidth: string }) => {
+const LeftNav = ({
+  navWidth,
+  toggleDisplay,
+}: {
+  navWidth: string;
+  toggleDisplay: any;
+}) => {
   const NavLinks = [
     {
       name: "Dashboard",
@@ -67,10 +74,23 @@ const LeftNav = ({ navWidth }: { navWidth: string }) => {
   return (
     <div
       className={styles.main}
-      style={{ width: navWidth === "wide" ? "18rem" : "7rem" }}
+      style={{
+        width:
+          navWidth === "responsive"
+            ? "100vw"
+            : navWidth === "wide"
+            ? "18rem"
+            : "7rem",
+      }}
     >
       <div className={styles.top}>
-        <Logo navWidth={navWidth} display="normal" />
+        <div className={styles["logo-container"]}>
+          <Logo navWidth={navWidth} display="normal" />
+          <FaPoop
+            className={styles["exit-logo"]}
+            onClick={() => toggleDisplay()}
+          />
+        </div>
         {NavLinks.map((link) => (
           <Links
             navWidth={navWidth}

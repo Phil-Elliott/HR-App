@@ -14,9 +14,19 @@
   transition: all 0.3s ease-in-out;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exit-logo {
+  margin-right: 2rem;
+}
+
 @media only screen and (max-width: 800px) {
   .main {
-    display: none;
+    // display: none;
     // width: 100vw !important;
   }
 }
