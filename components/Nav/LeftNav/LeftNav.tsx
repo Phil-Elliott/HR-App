@@ -16,13 +16,12 @@ import {
   FaPoop,
 } from "react-icons/fa";
 
-const LeftNav = ({
-  navWidth,
-  toggleDisplay,
-}: {
+type LeftNavProps = {
   navWidth: string;
-  toggleDisplay: any;
-}) => {
+  toggleDisplay: () => void;
+};
+
+const LeftNav = ({ navWidth, toggleDisplay }: LeftNavProps) => {
   const NavLinks = [
     {
       name: "Dashboard",

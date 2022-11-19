@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../styles/pages/employees/employees.module.scss";
 
-const employees = () => {
+const Employees = () => {
   return <div>employees</div>;
 };
 
-export default employees;
+export default Employees;

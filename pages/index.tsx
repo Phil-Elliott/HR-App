@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/pages/home/home.module.scss";
 
-export default function Home() {
+export default function Dashboard() {
   return <div className={styles.main}>Home</div>;
 }
 
