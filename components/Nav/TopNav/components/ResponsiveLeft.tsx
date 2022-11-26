@@ -5,7 +5,6 @@ import { FaBars } from "react-icons/fa";
 
 const ResponsiveLeft = ({ toggleDisplay }: { toggleDisplay: any }) => {
   return (
-    // <div className={styles.main}>
     <>
       <FaBars
         className={styles["hamburger-icon"]}
@@ -13,16 +12,7 @@ const ResponsiveLeft = ({ toggleDisplay }: { toggleDisplay: any }) => {
       />
       <Logo navWidth="wide" display="responsive" />
     </>
-    // </div>
   );
 };
 
 export default ResponsiveLeft;
-
-/*
-
-  1) add hamburger icon (use a generic icon)
-  2) Add logo and name (use a shared component)
-
-
-*/

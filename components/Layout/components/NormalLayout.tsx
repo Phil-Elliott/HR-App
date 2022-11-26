@@ -20,7 +20,6 @@ const NormalLayout = ({
         />
         <main>{children}</main>
       </div>
-      )
     </div>
   );
 };
